@@ -80,8 +80,8 @@ val myConstant = 42</code>
                         <pre class="code">
                             <code>int apples = 3;
 int oranges = 5;
-String fruitSummary = "I have " + (apples + oranges)
- + " pieces of fruit";</code>
+String fruitSummary = "I have "
++ (apples + oranges) + " pieces of fruit";</code>
                         </pre>
                     </div>
                     <div class="card">
@@ -89,7 +89,8 @@ String fruitSummary = "I have " + (apples + oranges)
                         <pre class="code">
                             <code>var apples = 3
 var oranges = 5
-var fruitSummary = "I have ${apples + oranges} pieces of fruit."</code>
+var fruitSummary = "I have ${apples + oranges}
+ pieces of fruit."</code>
                         </pre>
                     </div>
                 </div>
@@ -125,7 +126,8 @@ var biscuits = piecesOfBiscuits.toInt()</code>
 final int count = names.length;
 
 for (int i = 0; i < count-1; i++) {
-    System.out.println(String.format("Person %s is called %s", count + 1, names[i]));
+    System.out.println(String.format("Person %s is called %s",
+    count + 1, names[i]));
 }
 // Person 1 is called Anna
 // Person 2 is called Alex
@@ -149,7 +151,76 @@ for (i in 0..count - 1) {
                         </pre>
                     </div>
                 </div>
+
             </div>
+        </div>
+
+            <div class="section">
+            <div class="title">COLLECTIONS</div>
+
+            <div class="case">
+                <div class="name">Arrays</div>
+                <div class="pair">
+                    <div class="card">
+                        <div class="lang">Java</div>
+                        <pre class="code">
+                            <code>val shoppingList = arrayOf("catfish", "water",
+    "tulips", "blue paint")
+shoppingList[1] = "bottle of water"</code>
+                        </pre>
+                    </div>
+                    <div class="card">
+                        <div class="lang">Kotlin</div>
+                        <pre class="code">
+                            <code>val shoppingList = arrayOf("catfish", "water",
+    "tulips", "blue paint")
+shoppingList[1] = "bottle of water"</code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case">
+                <div class="name">Empty Collections</div>
+                <div class="pair">
+                    <div class="card">
+                        <div class="lang">Java</div>
+                        <pre class="code">
+                            <code>String[] emptyArray = new String[0];</code>
+                        </pre>
+                    </div>
+                    <div class="card">
+                        <div class="lang">Kotlin</div>
+                        <pre class="code">
+                            <code>val emptyArray = arrayOf<String>()</code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case">
+                <div class="name">HashMap</div>
+                <div class="pair">
+                    <div class="card">
+                        <div class="lang">Java</div>
+                        <pre class="code">
+                            <code>Map<String, String> hash = new HashMap<>();
+hash.put("first_name", "John");
+hash.put("last_name", "Mayer");</code>
+                        </pre>
+                    </div>
+                    <div class="card">
+                        <div class="lang">Kotlin</div>
+                        <pre class="code">
+                            <code>val hash = HashMap<String, String>()
+hash["first_name"] = "John"
+hash["last_name"] = "Mayer"</code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
         </div>
     </body>
